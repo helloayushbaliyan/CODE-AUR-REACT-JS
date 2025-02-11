@@ -6,7 +6,7 @@ export default function Input({
   onAmountChange,
   onCurrencyChange,
   currencyOption = [],
-  selectcurrency = "inr",
+  selectcurrency,
 }) {
   return (
     <>

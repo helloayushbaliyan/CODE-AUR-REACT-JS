@@ -40,16 +40,17 @@ function App() {
                     label="from"
                     amount={amount}
                     currencyOption={options}
-                    onCurrencyChange={(currency) => setamount(currency)}
-                    selectCurrency={from}
+                    onCurrencyChange={(currency) => setfrom(currency)}
+                    selectcurrency={from}
                     onAmountChange={(amount) => setamount(amount)}
                   />
 
                   <div className=" ] relative flex justify-center">
                     <div className="absolute top-[-2.4rem] bg-white px-1  py-3 overflow-x-hidden ">
                       <button
-                      onClick={swap}
-                      className="   bg-blue-600 text-2xl text-white py-3 px-5 rounded-xl hover:bg-blue-900 transition duration-300">
+                        onClick={swap}
+                        className="   bg-blue-600 text-2xl text-white py-3 px-5 rounded-xl hover:bg-blue-900 transition duration-300"
+                      >
                         swap
                       </button>
                     </div>
@@ -57,15 +58,17 @@ function App() {
 
                   {/* to input here */}
                   <Input
-                  label="to"
-                  amount={convertedamount}
-                  currencyOption={options}
-                  onCurrencyChange={(currency) => setto(currency)}
-                  // selectCurrency={to}
+                    label="to"
+                    amount={convertedamount}
+                    currencyOption={options}
+                    onCurrencyChange={(currency) => setto(currency)}
+                    selectcurrency={to}
                   />
                 </div>
                 <button
-                onClick={convert} className="w-full mt-5    bg-blue-600 text-2xl text-white py-3 px-5 rounded-xl hover:bg-blue-900 transition duration-300">
+                  onClick={convert}
+                  className="w-full mt-5    bg-blue-600 text-2xl text-white py-3 px-5 rounded-xl hover:bg-blue-900 transition duration-300"
+                >
                   convert
                 </button>
               </div>
