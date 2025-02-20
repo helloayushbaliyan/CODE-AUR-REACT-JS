@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+
+// import UserContextProvider from "./context/UserContextProvider";
+import Login from "./components/login";
+import Profile from "./components/profile";
+import UserContextProvider from "./context/UserContextProvider";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   <>
-   <div className="bg-slate-900 h-screen">
-    <h1 className='text-white text-5xl text-center p-20 capitalize'>context api</h1>
-    </div></>
-  )
+    <UserContextProvider>
+      <div className="bg-slate-900 text-white h-screen text-center">
+        <h1 className=" text-5xl text-center p-20 capitalize">
+          context api
+        </h1>
+        <Login />
+        <Profile />
+      </div>
+    </UserContextProvider>
+  );
 }
 
-export default App
+export default App;
