@@ -9,6 +9,7 @@ export default function AddTodo(props) {
   const addTodoHandler = (e) => {
     e.preventDefault();
     dispatch(addTodo(input));
+
     setinput("")
   };
   return (
